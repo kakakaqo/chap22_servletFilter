@@ -58,8 +58,8 @@ public class BoardWriteServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 		throws ServletException, IOException {
 		
-		// POST 한글 파라미터 깨짐 처리
-		request.setCharacterEncoding("utf-8");
+		// POST 한글 파라미터 깨짐 처리[필터로 대체되어 주석처리]
+		//request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset:utf-8");
 		
 		// 파라미터 받기
